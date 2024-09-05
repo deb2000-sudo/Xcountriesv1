@@ -11,7 +11,7 @@ const Countries = () => {
     fetch(API_END_POINTS)
       .then((response) => response.json())
       .then((flagData) => setFlags(flagData))
-      .catch((error) => console.error("data not fetched", error));
+      .catch((error) => console.error("Error fetching data: ", error));
   }, []);
 
   return (
